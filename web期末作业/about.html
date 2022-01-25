@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>杨轩的个人网站</title>
+</head>
+<body>
+    <div class="about">
+        <h3 class="about_tit">要不断的努力，才能成为更好的自己</h3>
+        <img class="about_bgc" src="背景2.jpg" alt="">
+        <div class='ribbon'>
+            <a href='./index.html'><span>Home</span></a>
+            <a href='./about.html'><span>About</span></a>
+            <a href='./form.html'><span>Form</span></a>
+
+        </div>
+        <div class="me">
+            <img class="me_img" src="我.jpg" alt="">
+            <span class="me_tit animate ">我是杨轩，生于2003年12月29日，今年是一名大一的学生，平时爱好看看书和电影，浏览网页资料，学习新知识，和同学们聊天。跟大多数人一样，对未来些许迷茫，当忽然之间脑海里闪现出来一些高考前的某个片段时，会情不自禁的回想那个时候的自己，关于那个曾经的所有点点滴滴也渐渐浮现出一些画面，突然拼命的想要去找一些记忆，寻找的过程中自己早已沉溺在回忆里，忘了的忘不了的感触在这一刻全都涌了出来，我觉得最后寻找的结果或许已不重要了，因为这突如其来想要寻找的一些东西的念头，让自己突然变得好安静，莫名的思绪蔓延开来了，仿佛打开了老旧的抽屉，里面装满了当初的成长，青涩，遗憾与那一种想起来会不禁忽然笑出来的感觉，可能想笑的是那时的自己，又或许是笑那带有遗憾结尾的时光，怀念真好。
+                又一年即将过去了，生活一如既往的推着自己往前走，在行人眼里穿梭，而不时会回头看看的，还是那个仿佛不知在追逐着什么的自己，此刻的空气很好，它不会留下痕迹。
+            </span>
+        </div>
+        <div class="videos">
+            <span>
+                        这是我很喜欢的一个剪辑视频，它的原曲是《飘向北方》，是一首很好的歌曲。这个视频它的意义不仅仅是逗人发笑，更是以一种幽默诙谐的方式反映了流动人口的对南北差异的无奈，即便如此，他们却无一例外义无反顾地选择了漂泊。我刚刚来到北京这座城市时，也曾惊讶于生活中种种或大或小的南北差异，气候干冷，食物里放麻酱......适应它们是一个漫长而痛苦的过程，我们需要去克服生活中的种种不完美：有时对家乡和亲人的思念会让我们觉得孤独，有时生活中小小的不如意也会令人窒息。但是正如视频里的那句，“只想用奔波置换安稳，去回答那一句：值得吗？”我想说，作为一个和其他人一样远离家乡，独自生活的学生，虽然过程艰难，但是一切都值得。
+                    </span>
+            <video width="800" controls id="video" preload="auto" height="100%" autoplay="autoplay" loop="loop" type="video/mp4" src="视频.mp4"></video>
+
+        </div>
+    </div>
+</body>
+</html>
+<style type="text/css">
+	* {
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about_bgc {
+    width: 100%
+}
+
+.about_tit {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: 550;
+    bottom: 0;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    margin: auto;
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.me_tit {
+    width: 600px;
+    line-height: 36px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.me_img {
+    width: 600px;
+    height: 700px;
+}
+
+.animate {
+    padding-left: 20px;
+    width: 500px;
+    font-size: 16px;
+    color: #000;
+    animation: 10s wordsLoop linear infinite normal;
+}
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+.videos {
+    display: flex;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.videos span {
+    width: 600px;
+    margin-right: 100px;
+    margin-left: 300px;
+
+}
+</style>
